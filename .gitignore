@@ -1,0 +1,28 @@
+# Secrets
+.env
+*.key
+
+
+.claude
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Models / caches
+.cache/
+*.bin.lock
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# NOTE: chroma_db/ is intentionally NOT ignored.
+# We pre-build the vector store locally and commit it so the
+# HuggingFace Space loads it read-only without re-embedding on startup.

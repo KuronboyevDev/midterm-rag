@@ -1,0 +1,8 @@
+# Track large binary documents with Git LFS (required for HuggingFace Spaces)
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+
+# Chroma persisted store binaries
+chroma_db/**/*.bin filter=lfs diff=lfs merge=lfs -text
+chroma_db/**/*.parquet filter=lfs diff=lfs merge=lfs -text
+chroma_db/**/*.sqlite3 filter=lfs diff=lfs merge=lfs -text
